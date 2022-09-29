@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Anime Recommendations</title>
+</head>
+<body>
+    <h1>Anime Recommendations</h1>
+    <br/><br/>
+    {% set list1 = animes[1:-2].split(',') %}
+    {% for item in list1 %}
+       <p>{{ item }}</p>
+    {% endfor %}
+
+</body>
+</html>
